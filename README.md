@@ -20,23 +20,23 @@ In order to make this task as easy and intuitive as possible, I used a non-graph
 
 ### Overview over key-strokes
 
-'q' : switch to anatomy only
-'w' : switch to dF/F map (response)
-'e' : switch to dF/F map (maximum)
-'r' : switch to anamy overlayed with selected ROIs
-'t' : switch to map of ROIs only
+'q' : switch to anatomy only\
+'w' : switch to dF/F map (response)\
+'e' : switch to dF/F map (maximum)\
+'r' : switch to anamy overlayed with selected ROIs\
+'t' : switch to map of ROIs only\
 'y' : switch to map of local correlations
 
-mouse-click right : full view zoom
-mouse-click middle : pan (move mouse)
+mouse-click right : full view zoom\
+mouse-click middle : pan (move mouse)\
 scroll-wheel : zoom in and out
 
-'f' : mouse-click left draws ROI outline
-'d' : mouse-click left deletes ROI
-'g' : mouse-click left shifts existing nearby ROI
-'z' : mouse-click left automatically selects a circular ROI
-'x' : mouse-click left automatically selects a ROI based on local correlations
-'1' to '9' : selects ROI size for semi-automatic ROI selection ('x', 'z')
+'f' : mouse-click left draws ROI outline\
+'d' : mouse-click left deletes ROI\
+'g' : mouse-click left shifts existing nearby ROI\
+'z' : mouse-click left automatically selects a circular ROI\
+'x' : mouse-click left automatically selects a ROI based on local correlations\
+'1' to '9' : selects ROI size for semi-automatic ROI selection ('x', 'z')\
 'v' : mouse-click left plots a map of local correlations of all image pixels to the selected location (cf. [Junek et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711456/))
 
 
