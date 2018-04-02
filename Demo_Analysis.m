@@ -1,10 +1,11 @@
 
-%% The first part of this script loads and pre-processes 3D time series of calcium imaging
+%% This demo loads and pre-processes 3D time series of calcium imaging
 % This part is specific for the properties of the time series and must be modified according to one's needs.
-%% The second part (starting with "%% Select ROIs") uses the 3D time series to load a non-graphical user interface
-% This part is based on a couple of helper scripts in the background that
-% make drawing ROIs enjoyable.
 
+%% The second part (starting with "%% Select ROIs") uses the 3D time series to load a non-graphical user interface
+% This part is based on a couple of helper scripts in the background that make drawing ROIs enjoyable.
+
+%% Prepare Matlab environment
 clear all
 global clut2b timetracesX_X ROI_map_X movie_AVG_X
 addpath('non-GUI ROI analysis\')
@@ -36,8 +37,9 @@ movie = read_movie(Filename,meta.width,meta.height,nb_frames_total,startingpoint
 
 
 %% Subtract baseline from movie
-baseline = quantile(movie(:),0.03);
+baseline = quantile(movie(:),0.03); % baseline defined as the 3% quantile of all pixel values
 movie = movie - baseline;
+
 
 %% Calculate average and maps of local correlations and responses
 
@@ -74,6 +76,8 @@ AVG_Z = AVG_movie;
 [ROI_mapX,timetracesX,timetracesX_raw] = timetraces_singleplane(movie,AVG_Z,offset,DF_reponse(:,:),DF_master(:,:),localCorrelations(:,:),df_scale,ROI_map_input,meta,1,AVG_Z);
 % figure, imagesc(conv2(timetracesX,fspecial('gaussian',[25 1],23),'same'));
 ROI_map_input = ROI_mapX;
+
+%% Save data to a structure; save the structure into a *.mat-file
 
 plane{1}.ROI_map = ROI_mapX;
 plane{1}.timetraces = timetracesX;
