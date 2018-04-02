@@ -10,7 +10,7 @@ To try out the script provided here,
 1. Clone the repository locally
 2. Open **'Demo_Analysis.m'** in Matlab
 3. Follow the notebook instructions and load the (small) demo calcium movie excerpt
-4. Once the graphical user interface appears: a) hit the 'f' key and draw ROI b) use mouse to navigate
+4. Once the graphical user interface appears: a) hit the 'f' key and draw ROI b) use mouse to navigate.
 
 ### The idea: using callback functions without GUI
 
