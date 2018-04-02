@@ -27,9 +27,9 @@ In order to make this task as easy and intuitive as possible, I used a non-graph
 't' : switch to map of ROIs only\
 'y' : switch to map of local correlations
 
-mouse-click right : full view zoom\
-mouse-click middle : pan (move mouse)\
-scroll-wheel : zoom in and out
+Mouse-click right : full view zoom\
+Mouse-click middle : pan (move mouse)\
+Scroll-wheel : zoom in and out
 
 'f' : mouse-click left draws ROI outline\
 'd' : mouse-click left deletes ROI\
@@ -38,6 +38,8 @@ scroll-wheel : zoom in and out
 'x' : mouse-click left automatically selects a ROI based on local correlations\
 '1' to '9' : selects ROI size for semi-automatic ROI selection ('x', 'z')\
 'v' : mouse-click left plots a map of local correlations of all image pixels to the selected location (cf. [Junek et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711456/))
+
+Close figure window : save selected ROIs and timetraces to the Matlab workspace.
 
 
 ### 'Demo_analysis.m' explained
