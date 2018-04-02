@@ -1,9 +1,9 @@
-## Drawing ROIs without GUI
+# Drawing ROIs without GUI
 Drawing ROIs with a non-graphical user interface in Matlab
 
 Drawing ROIs is a repetitive task when analyzing calcium imaging data. Despite automatization attempts (e.g., http://neurofinder.codeneuro.org/), most of the time drawing the ROIs manually is still the best solution. This script tries to simplify and streamline manual drawing of ROIs.
 
-# Quick start
+### Quick start
 
 To try out the script provided here,
 
@@ -12,13 +12,35 @@ To try out the script provided here,
 3. Follow the notebook instructions and load the (small) demo calcium movie excerpt
 4. Once the graphical user interface appears: a) hit the 'f' key and draw ROI b) use mouse to navigate
 
-# The idea: using callback functions without GUI
+### The idea: using callback functions without GUI
 
 In order to make this task as easy and intuitive as possible, I used a non-graphical user interface that relies on the user's knowledge of which keys and which mouse buttons to press (inspired by the Google Maps interface). I described the idea of this non-graphical user interface on [my blog](https://ptrrupprecht.wordpress.com/2015/06/24/a-simple-non-graphical-user-interface-in-matlab-keyboard-callback-functions/). The callback functions are defined in [this subscript](https://github.com/PTRRupprecht/Drawing-ROIs-without-GUI/blob/master/non-GUI%20ROI%20analysis/switchImage.m).
 
 [![Drawing ROIs with a non-graphical user interface](nonGIU_ROI_drawing.png)](https://youtu.be/rGTTGCEGvYQ "Drawing ROIs with a non-graphical user interface")
 
-# 'Demo_analysis.m' explained
+### Overview over key-strokes
+
+'q' : switch to anatomy only
+'w' : switch to dF/F map (response)
+'e' : switch to dF/F map (maximum)
+'r' : switch to anamy overlayed with selected ROIs
+'t' : switch to map of ROIs only
+'y' : switch to map of local correlations
+
+mouse-click right : full view zoom
+mouse-click middle : pan (move mouse)
+scroll-wheel : zoom in and out
+
+'f' : mouse-click left draws ROI outline
+'d' : mouse-click left deletes ROI
+'g' : mouse-click left shifts existing nearby ROI
+'z' : mouse-click left automatically selects a circular ROI
+'x' : mouse-click left automatically selects a ROI based on local correlations
+'1' to '9' : selects ROI size for semi-automatic ROI selection ('x', 'z')
+'v' : mouse-click left plots a map of local correlations of all image pixels to the selected location (cf. [Junek et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711456/))
+
+
+### 'Demo_analysis.m' explained
 
 The main script ('Demo_Analysis.m') loads a 3D stack into the RAM and performs a couple of pre-processing steps before opening the non-graphical user interface (which is basically a simple image opened in Matlab, glued to a couple of key-stroke- and mouse-gesture-specific callback functions). The video linked above gives an overview over the keys (=shortcuts) and how to use them on a real calcium imaging dataset.
 
