@@ -8,9 +8,9 @@ Drawing ROIs is a repetitive task when analyzing calcium imaging data. Despite a
 To try out the script provided here,
 
 1. Clone the repository locally
-2. Open **'Demo_Analysis.m'** in Matlab
+2. Open **`Demo_Analysis.m`** in Matlab
 3. Follow the notebook instructions and load the (small) demo calcium movie excerpt
-4. Once the graphical user interface appears: a) hit the 'f' key and draw ROI b) use mouse to navigate.
+4. Once the graphical user interface appears: a) hit the `f` key and draw ROI b) use mouse to navigate.
 
 ### The idea: using callback functions without GUI
 
@@ -20,31 +20,31 @@ In order to make this task as easy and intuitive as possible, I used a non-graph
 
 ### Overview over key-strokes
 
-'q' : switch to anatomy only\
-'w' : switch to dF/F map (response)\
-'e' : switch to dF/F map (maximum)\
-'r' : switch to anamy overlayed with selected ROIs\
-'t' : switch to map of ROIs only\
-'y' : switch to map of local correlations
+`q` : switch to anatomy only\
+`w` : switch to dF/F map (response)\
+`e` : switch to dF/F map (maximum)\
+`r` : switch to anamy overlayed with selected ROIs\
+`t` : switch to map of ROIs only\
+`y` : switch to map of local correlations
 
 Mouse-click right : full view zoom\
 Mouse-click middle : pan (move mouse)\
 Scroll-wheel : zoom in and out
 
-'f' : mouse-click left draws ROI outline\
-'d' : mouse-click left deletes ROI\
-'g' : mouse-click left shifts existing nearby ROI\
-'z' : mouse-click left automatically selects a circular ROI\
-'x' : mouse-click left automatically selects a ROI based on local correlations\
-'1' to '9' : selects ROI size for semi-automatic ROI selection ('x', 'z')\
-'v' : mouse-click left plots a map of local correlations of all image pixels to the selected location (cf. [Junek et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711456/))
+`f` : mouse-click left draws ROI outline\
+`d` : mouse-click left deletes ROI\
+`g` : mouse-click left shifts existing nearby ROI\
+`z` : mouse-click left automatically selects a circular ROI\
+`x` : mouse-click left automatically selects a ROI based on local correlations\
+`1` to `9` : selects ROI size for semi-automatic ROI selection (`x`, `z`)\
+`v` : mouse-click left plots a map of local correlations of all image pixels to the selected location (cf. [Junek et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2711456/))
 
 Close figure window : save selected ROIs and timetraces to the Matlab workspace.
 
 
 ### 'Demo_analysis.m' explained
 
-The main script ('Demo_Analysis.m') loads a 3D stack into the RAM and performs a couple of pre-processing steps before opening the non-graphical user interface (which is basically a simple image opened in Matlab, glued to a couple of key-stroke- and mouse-gesture-specific callback functions). The video linked above gives an overview over the keys (=shortcuts) and how to use them on a real calcium imaging dataset.
+The main script (`Demo_Analysis.m`) loads a 3D stack into the RAM and performs a couple of pre-processing steps before opening the non-graphical user interface (which is basically a simple image opened in Matlab, glued to a couple of key-stroke- and mouse-gesture-specific callback functions). The video linked above gives an overview over the keys (=shortcuts) and how to use them on a real calcium imaging dataset.
 
 To adapt this script to your data, you want to change 'Demo_Analysis.m', not the rest of the code. This program can be used, **as long as your data fit into the RAM**. For larger single calcium recordings, other methods (that use only average images of anatomy or binned videos) must be used.
 
