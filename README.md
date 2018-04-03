@@ -18,7 +18,7 @@ In order to make this task as easy and intuitive as possible, I used a non-graph
 
 [![Drawing ROIs with a non-graphical user interface](nonGIU_ROI_drawing.png)](https://youtu.be/rGTTGCEGvYQ "Drawing ROIs with a non-graphical user interface")
 
-### Overview over key-strokes
+### Overview of key-strokes
 
 `q` : switch to anatomy only\
 `w` : switch to dF/F map (response)\
