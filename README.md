@@ -48,4 +48,4 @@ The main script (`Demo_Analysis.m`) loads a 3D stack into the RAM and performs a
 
 To adapt this script to your data, you want to change 'Demo_Analysis.m', not the rest of the code. This program can be used, **as long as your data fit into the RAM**. For larger single calcium recordings, other methods (that use only average images of anatomy or binned videos) must be used.
 
-Variations of this script have been used to extract activity of neurons from calcium imaging data in the following papers:  [paper 1]( http://dx.doi.org/10.1016/j.cub.2017.11.007), [paper 2](https://www.osapublishing.org/boe/abstract.cfm?uri=boe-7-5-1656).
+Variations of this script have been used to extract activity of neurons from calcium imaging data in the following papers:  [paper 1]( http://dx.doi.org/10.1016/j.cub.2017.11.007), [paper 2](https://www.osapublishing.org/boe/abstract.cfm?uri=boe-7-5-1656), [paper 3](https://doi.org/10.1016/j.neuron.2018.09.013).
