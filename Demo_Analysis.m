@@ -19,7 +19,12 @@ load clut2b
 
 Filename = 'ca_imaging_example.tif';
 clear meta
-[A,result,meta.framerate,meta.zstep,meta.zoom,meta.motorpositions,meta.scalingfactors] = read_metadata_function(Filename);
+if 0 % only use for files saved with ScanimageB
+  [A,result,meta.framerate,meta.zstep,meta.zoom,meta.motorpositions,meta.scalingfactors] = read_metadata_function(Filename);
+else % enter dummy values
+  meta.framerate = 30;
+  meta.zoom = 1;
+end
 L = imfinfo(Filename);
 meta.height = L(1).Height;
 meta.width = L(1).Width;
