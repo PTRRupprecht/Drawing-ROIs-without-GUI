@@ -72,7 +72,7 @@ function [ROI_mapX,timetracesX,timetracesX_raw] = timetraces_singleplane(movie,m
 %     RGBimage=imadjust(RGBimage,[0 max(RGBimage(:))],[0 1]);
     figure(4198); handle1 = imagesc(RGBimage); colormap(gray);
     akZoom_PR(); set(gcf, 'Pointer', 'crosshair');
-    hold on; set(gcf, 'units','normalized','Position',[1.1 0.1 0.8 0.95]); %[1800 0 950 950]);
+    hold on; set(gcf, 'units','normalized','Position',[0.1 0.1 0.7 0.75]); %[1800 0 950 950]);
     set(gcf, 'WindowKeyPressFcn', {@switchImage,AVG_X,DF_reponse,DF_master,localCorrelations,df_scale,movie,offset,handle1,framerate,meta.zoom,last_ii,movie_AVG_X});
     % set(handle1,'ButtonDownFcn',{@ImageClickCallback,gcf});
     waitfor(gcf);
