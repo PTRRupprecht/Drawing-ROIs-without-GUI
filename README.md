@@ -64,4 +64,4 @@ Variations of this script have been used to extract activity from calcium imagin
 
 If you are using this toolbox for your scientific work, please refer to this paper as its first reference:
 
-Rupprecht, Peter, and Rainer W. Friedrich. ["Precise synaptic balance in the zebrafish homolog of olfactory cortex."](https://doi.org/10.1016/j.neuron.2018.09.013) Neuron 100.3 (2018): 669-683. 
+> Rupprecht, Peter, and Rainer W. Friedrich. ["Precise synaptic balance in the zebrafish homolog of olfactory cortex."](https://doi.org/10.1016/j.neuron.2018.09.013) Neuron 100.3 (2018): 669-683. 
