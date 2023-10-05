@@ -48,4 +48,20 @@ The main script (`Demo_Analysis.m`) loads a 3D stack into the RAM and performs a
 
 To adapt this script to your data, you want to change 'Demo_Analysis.m', not the rest of the code. This program can be used, **as long as your data fit into the RAM**. For larger single calcium recordings, other methods (that use only average images of anatomy or binned videos) must be used.
 
-Variations of this script have been used to extract activity of neurons from calcium imaging data in the following papers:  [paper 1]( http://dx.doi.org/10.1016/j.cub.2017.11.007), [paper 2](https://www.osapublishing.org/boe/abstract.cfm?uri=boe-7-5-1656), [paper 3](https://doi.org/10.1016/j.neuron.2018.09.013).
+### Applications across cell types and model organisms
+
+Variations of this script have been used to extract activity from calcium imaging data for the following applications: 
+
+- [Imaging of mitral cells in zebrafish olfactory bulb]( http://dx.doi.org/10.1016/j.cub.2017.11.007)
+- [Multi-plane imaging of 1000 neurons](https://www.osapublishing.org/boe/abstract.cfm?uri=boe-7-5-1656)
+- [Imaging of zebrafish forebrain with GCaMP6f](https://doi.org/10.1016/j.neuron.2018.09.013)
+- [Imaging of zebrafish forebrain with OGB-1](https://www.nature.com/articles/s41593-021-00895-5)
+- [Imaging of hippocampal astrocytes in mice](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v2)
+- [Imaging of hippocampal neurons in mice](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v2)
+- [GRIN lens imaging of neurons in mouse habenula](https://www.biorxiv.org/content/10.1101/2023.01.04.522571v1)
+
+### Reference
+
+If you are using this toolbox for your scientific work, please refer to this paper as its first reference:
+
+Rupprecht, Peter, and Rainer W. Friedrich. ["Precise synaptic balance in the zebrafish homolog of olfactory cortex."](https://doi.org/10.1016/j.neuron.2018.09.013) Neuron 100.3 (2018): 669-683. 
