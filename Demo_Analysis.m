@@ -67,7 +67,7 @@ subplot(1,2,1);
 imagesc(DF_reponse(:,:),[-0.5 2]); axis off equal
 subplot(1,2,2);
 imagesc(localCorrelations(:,:),[-0.5 3]); axis off equal
-akZoom('all_linked')
+% akZoom('all_linked')
 
 
 %% Select ROIs - this is the main part of the program, allowing to select ROIs
