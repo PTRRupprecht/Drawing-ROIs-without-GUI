@@ -91,7 +91,7 @@ function [ROI_mapX,timetracesX,timetracesX_raw] = timetraces_singleplane(movie,m
             L = regionprops(ROI_map_temp,'BoundingBox');
             ROI_map_temp(ROI_map_temp == 0) = NaN;
             indizesx = ceil(L.BoundingBox(1)):floor((L.BoundingBox(1)+L.BoundingBox(3)));
-            indizesy = ceil(L.BoundingBox(2)):floor((L.BoundingBox(2)+L.BoundingBox(3)));
+            indizesy = ceil(L.BoundingBox(2)):floor((L.BoundingBox(2)+L.BoundingBox(4)));
             
             indizesx = unique(min(max(1,indizesx),size(movie,2)));
             indizesy = unique(min(max(1,indizesy),size(movie,1)));
