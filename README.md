@@ -59,6 +59,7 @@ Variations of this script have been used to extract activity from calcium imagin
 - [Imaging of hippocampal astrocytes in mice](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v2)
 - [Imaging of hippocampal neurons in mice](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v2)
 - [GRIN lens imaging of neurons in mouse habenula](https://www.biorxiv.org/content/10.1101/2023.01.04.522571v1)
+- [Imaging of excitatory and inhibitory neurons in mouse spinal cord](https://www.biorxiv.org/content/10.1101/2024.07.17.603957v1)
 
 ### Reference
 
