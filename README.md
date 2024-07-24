@@ -1,7 +1,7 @@
 # Drawing ROIs without GUI
 Drawing ROIs with a non-graphical user interface in Matlab
 
-Drawing ROIs is a repetitive task when analyzing calcium imaging data. Despite automatization attempts (e.g., http://neurofinder.codeneuro.org/), most of the time drawing the ROIs manually is still the best solution. This script tries to simplify and streamline manual drawing of ROIs.
+Drawing ROIs is a repetitive task when analyzing calcium imaging data. Despite automatization attempts (e.g., http://neurofinder.codeneuro.org/), in many cases drawing the ROIs manually is still the best solution. This script tries to simplify and streamline manual drawing of ROIs.
 
 ### Quick start
 
